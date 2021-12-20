@@ -1,4 +1,4 @@
-package Aula1.Pratica2;
+package Aula1_TM.Pratica2;
 
 public class Exe2 {
 

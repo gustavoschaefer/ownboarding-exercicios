@@ -1,4 +1,4 @@
-package Aula1.Pratica1;
+package Aula1_TM.Pratica1;
 
 import java.util.Scanner;
 
