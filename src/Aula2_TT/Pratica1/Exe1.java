@@ -12,11 +12,11 @@ public class Exe1 {
 
     private static class Senha {
 
-        private String senha="";
+        private String senha;
         private Pattern pattern;
 
         public Senha() {
-            pattern = Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,20}$", Pattern.CASE_INSENSITIVE);
+            this.pattern = Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,20}$", Pattern.CASE_INSENSITIVE);
         }
 
         public String getSenha() {
