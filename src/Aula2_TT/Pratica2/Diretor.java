@@ -1,7 +1,6 @@
 package Aula2_TT.Pratica2;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 
 public class Diretor extends Clt{
     private BigDecimal lucro;

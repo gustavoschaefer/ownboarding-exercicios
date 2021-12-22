@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class Exe {
 
+    private static Scanner sc = new Scanner(System.in);
+
     public static void main(String args[]) {
         int exe;
         System.out.print("Digite o numero do exercicio:");
-        Scanner sc = new Scanner(System.in);
         exe = sc.nextInt();
         switch(exe) {
             case 1:
@@ -33,7 +34,6 @@ public class Exe {
     static void exercicio1() {
         int tamanho;
         System.out.print("Digite um numero:");
-        Scanner sc = new Scanner(System.in);
         tamanho = sc.nextInt();
         int[] numeros = new int[tamanho];
         int count= 1;
@@ -48,7 +48,6 @@ public class Exe {
     }
 
     static void exercicio2() {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Digite um número:");
         int tamanho = sc.nextInt();
         int[] numeros = new int[tamanho];
@@ -69,7 +68,6 @@ public class Exe {
 
     static void exercicio3() {
         System.out.print("Digite um número:");
-        Scanner sc = new Scanner(System.in);
         int numero = sc.nextInt();
 
         boolean primo = true;
@@ -89,7 +87,6 @@ public class Exe {
     static void exercicio4() {
         int tamanho;
         System.out.print("Digite um numero:");
-        Scanner sc = new Scanner(System.in);
         tamanho = sc.nextInt();
         int[] numeros = new int[tamanho];
         int count= 1;
@@ -114,7 +111,6 @@ public class Exe {
     }
 
     static void exercicio5() {
-        Scanner sc = new Scanner(System.in);
         int tamanho;
         System.out.print("Digite um numero de valores a retornar:");
         tamanho = sc.nextInt();
@@ -128,20 +124,18 @@ public class Exe {
         System.out.print("Digite um número de dígitos e de final:");
         num = sc.nextInt();
 
-        int count = 1;
-        Integer count2 = 1;
+        Integer count = 1;
         for (int i=0;i<numeros.length; i++) {
             while (numeros[i] == 0) {
-                if (count2.toString().length() >= digitos) {
-                    int aux = count2.toString().length() - count2.toString().replaceAll(num.toString(),"").length();
+                if (count.toString().length() >= digitos) {
+                    int aux = count.toString().length() - count.toString().replaceAll(num.toString(),"").length();
                     if (aux >= digitos) {
-                        numeros[i] = count2;
+                        numeros[i] = count;
                         System.out.println(numeros[i]);
                     }
                 }
-                count2++;
+                count++;
             }
-            count++;
         }
     }
 

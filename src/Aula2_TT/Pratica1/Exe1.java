@@ -7,7 +7,10 @@ public class Exe1 {
 
     public static void main(String[] args) {
         Senha s = new Senha();
-        s.setSenha("1234567As!");
+
+        s.setSenha("1234567As@");
+
+        System.out.println("Senha: " + s.getSenha());
     }
 
     private static class Senha {

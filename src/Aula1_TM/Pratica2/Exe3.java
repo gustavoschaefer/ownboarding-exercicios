@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Exe3 {
 
+    private static Scanner sc = new Scanner(System.in);
+
     private static class Produto {
         private String nome;
         private double preco;
@@ -41,9 +43,8 @@ public class Exe3 {
 
         for (int i=0;i<3;i++) {
             Produto p = new Produto();
-            Scanner sc = new Scanner(System.in);
             System.out.println("Nome do produto " + (i+1));
-            p.setNome(sc.nextLine());
+            p.setNome(sc.next());
             System.out.println("Preço do produto " + (i+1));
             p.setPreco(sc.nextDouble());
             System.out.println("Quantidade do produto " + (i+1));
